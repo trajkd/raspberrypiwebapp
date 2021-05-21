@@ -1,0 +1,16 @@
+<html>
+<body>
+	<form action="/" method="post" id="stringsForm" name="strings">
+	    <div>
+	        <div><label>Name</label><input class="form-control" type="text" id="name" name="name" placeholder="Name"></div>
+	    </div>
+	    <div>
+	        <div><label>Surname</label><input class="form-control" type="text" id="surname" name="surname" placeholder="Surame"></div>
+	    </div>
+	    <div id="success"></div>
+	    <div><button class="btn btn-primary btn-success" id="sendButton" type="button">Send</button></div>
+	</form>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="{{url_for('static', filename='form.js')}}"></script>
+</body>
+</html>
